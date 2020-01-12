@@ -7,7 +7,7 @@ import './styles.css'
 
 
 const fetchData = async () => {
-  return await axios.get('http://prace-mapa.herokuapp.com/sparql')
+  return await axios.get('https://prace-mapa.herokuapp.com/sparql')
 }
 
 
