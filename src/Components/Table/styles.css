@@ -1,0 +1,46 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-top: 130px;
+}
+
+.table .header span,
+.row span {
+  padding: 5px 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0 0;
+}
+
+span:nth-child(2) {
+  font-weight: bold;
+}
+
+.table .header span:first-child,
+.row span:first-child {
+  border-left: 1px solid #ccc;
+}
+
+.row:last-child span {
+  border-bottom: 1px solid #ccc;
+}
+
+
+.table .header,
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.disclaimer {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1060px) {
+  .table {
+    margin-top: 0;
+  }
+}
+

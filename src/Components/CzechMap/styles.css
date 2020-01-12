@@ -1,0 +1,51 @@
+
+.map-cantainer {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+}
+
+svg path.active {
+  fill: #d00
+}
+
+svg path:hover{
+  fill: #d00
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter label {
+  margin-right: 20px;
+}
+
+.filter select {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+  .map {
+    width: 100%;
+  }
+}
